@@ -6,17 +6,21 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 h2 {
   font-size: 3rem;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-.content h2 {
-  font-family: 'Roberto Condensed', sans-serif;
-}
-
-.content p {
-  font-family: Roberto, sans-serif;
+p {
+  padding: .3em;
+  padding-top: .25em;
   font-size: 1.5rem;
+  font-style: italic;
+  font-family: Roboto, sans-serif;
 }
 
 .banner {
@@ -27,11 +31,15 @@ h2 {
 
 .main {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 45em;
-  overflow: hidden;
+  max-width: 50em;
 }
 
 .btn {
@@ -54,13 +62,22 @@ h2 {
   border-color: #000;
 }
 
-.card-title {
-  margin: 0;
-  padding: .3rem 1rem;
-  transform: translate(1 1);
-}
-
 .img-flex {
   display: block;
   width: 100%;
+}
+
+.image {
+  width: 33%;
+  margin-right: 2.5rem;
+}
+
+.content {
+  width: 60%;
+}
+
+.banner-title {
+  max-width: 6em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
